@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d9aa"/><stop offset="1" stop-color="#e4b98a"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#68c3c0"/><stop offset="1" stop-color="#3f8f8d"/></linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <g fill="#fff" opacity=".9">
+    <path d="M180 220h90l30 30v40h-150v-40z"/><path d="M1180 160h120l40 40v50h-200v-50z"/><path d="M1320 420h70l25 25v30h-120v-30z"/><path d="M420 380h60l20 20v28h-100v-28z"/>
+  </g>
+  <path d="M0 760 Q200 700 400 750 T800 740 T1200 760 T1600 740 V1000 H0Z" fill="url(#sea)"/>
+  <path d="M0 820 Q200 780 400 815 T800 805 T1200 825 T1600 805 V1000 H0Z" fill="#3f8f8d" opacity=".6"/>
+  <g transform="translate(720 430) rotate(-8)">
+    <path d="M-150 -40 L110 -40 L150 0 L110 40 L-150 40 Z" fill="#f25346"/>
+    <path d="M-150 -40 L-190 -90 L-150 -90 L-100 -40 Z" fill="#f25346"/>
+    <rect x="-60" y="-10" width="140" height="22" fill="#d8d0d1" transform="translate(0 30)"/>
+    <path d="M-60 -10 L-20 -150 L40 -150 L20 -10Z" fill="#d8d0d1"/>
+    <path d="M-60 40 L-20 150 L40 150 L20 40Z" fill="#c0b6b7"/>
+    <circle cx="10" cy="-70" r="34" fill="#59332e"/>
+    <rect x="-8" y="-100" width="46" height="18" fill="#23190f" rx="6"/>
+    <rect x="150" y="-10" width="30" height="20" fill="#59332e"/>
+    <rect x="178" y="-110" width="10" height="220" fill="#23190f" opacity=".85"/>
+  </g>
+  <g fill="#f25346"><polygon points="1200,520 1230,560 1190,570"/><polygon points="1380,600 1410,630 1375,648"/></g>
+  <g fill="#68c3c0"><circle cx="1050" cy="470" r="14"/><circle cx="1090" cy="455" r="14"/><circle cx="1130" cy="445" r="14"/><circle cx="1170" cy="440" r="14"/></g>
+  <text x="80" y="140" font-family="Georgia, serif" font-size="96" font-weight="700" fill="#59332e">The Aviator</text>
+</svg>

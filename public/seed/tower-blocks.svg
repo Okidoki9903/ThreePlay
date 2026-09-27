@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0cbc7"/><stop offset="1" stop-color="#a8a3c2"/></linearGradient></defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g transform="translate(800 560)">
+  </g>
+  <g>
+    <path d="M800 900 L1100 760 L800 620 L500 760Z" fill="#333344"/>
+    <path d="M500 760 L800 900 L800 960 L500 820Z" fill="#26263a"/>
+    <path d="M1100 760 L800 900 L800 960 L1100 820Z" fill="#1d1d2e"/>
+  </g>
+  <g>
+    <path d="M800 840 L1080 710 L800 580 L520 710Z" fill="#f25f5c"/><path d="M520 710 L800 840 L800 880 L520 750Z" fill="#c94a47"/><path d="M1080 710 L800 840 L800 880 L1080 750Z" fill="#a83d3b"/>
+    <path d="M790 785 L1050 665 L790 545 L530 665Z" fill="#ffe066"/><path d="M530 665 L790 785 L790 825 L530 705Z" fill="#d4b94f"/><path d="M1050 665 L790 785 L790 825 L1050 705Z" fill="#b39c40"/>
+    <path d="M800 735 L1020 625 L800 515 L580 625Z" fill="#70c1b3"/><path d="M580 625 L800 735 L800 775 L580 665Z" fill="#5a9e93"/><path d="M1020 625 L800 735 L800 775 L1020 665Z" fill="#4b857b"/>
+    <path d="M790 685 L990 585 L790 485 L600 585Z" fill="#247ba0"/><path d="M600 585 L790 685 L790 725 L600 625Z" fill="#1d6280"/><path d="M990 585 L790 685 L790 725 L990 625Z" fill="#17506a"/>
+    <path d="M800 635 L960 555 L800 475 L640 555Z" fill="#b388eb"/><path d="M640 555 L800 635 L800 675 L640 595Z" fill="#8f6cbc"/><path d="M960 555 L800 635 L800 675 L960 595Z" fill="#7a5ca1"/>
+    <path d="M1060 440 L1220 360 L1060 280 L900 360Z" fill="#f25f5c" opacity=".95"/><path d="M900 360 L1060 440 L1060 480 L900 400Z" fill="#c94a47"/><path d="M1220 360 L1060 440 L1060 480 L1220 400Z" fill="#a83d3b"/>
+  </g>
+  <text x="800" y="170" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="150" font-weight="800" fill="#333344">31</text>
+  <text x="800" y="230" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="40" letter-spacing="12" fill="#333344" opacity=".7">TOWER BLOCKS</text>
+</svg>
