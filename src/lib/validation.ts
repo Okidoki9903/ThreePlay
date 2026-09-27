@@ -7,6 +7,9 @@ const httpsUrl = z
   .url({ error: "Must be a valid URL" })
   .refine((u) => u.startsWith("https://"), { error: "Must start with https://" });
 
+// Uploaded media: the action additionally checks it lives in the user's storage folder.
+const mediaUrl = z.string().trim().url({ error: "Upload an image" });
+
 const optionalUrl = z
   .string()
   .trim()
@@ -29,8 +32,8 @@ export const submitGameSchema = z
     source: z.enum(["url", "zip"]),
     gameUrl: optionalUrl,
     zipPath: z.string().trim().optional(),
-    coverUrl: httpsUrl,
-    screenshots: z.array(httpsUrl).max(8, { error: "At most 8 screenshots" }).default([]),
+    coverUrl: mediaUrl,
+    screenshots: z.array(mediaUrl).max(8, { error: "At most 8 screenshots" }).default([]),
     controls: z.string().trim().max(2000).default(""),
     developerName: z.string().trim().min(1, { error: "Required" }).max(60),
     developerUrl: optionalUrl,

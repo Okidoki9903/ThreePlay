@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="main">{children}</main>
         <SiteFooter />
         <Toaster theme="dark" position="bottom-center" richColors closeButton />
-        <Analytics />
+        {process.env.VERCEL && <Analytics />}
       </body>
     </html>
   );

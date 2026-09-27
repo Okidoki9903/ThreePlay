@@ -136,7 +136,8 @@ export async function listGames({ q, tag, category, sort = "popular", page = 1, 
 
   const from = (Math.max(1, page) - 1) * pageSize;
   const { data, count, error } = await query.range(from, from + pageSize - 1);
-  if (error) console.error("listGames", error.message);
+  // PGRST103 = page past the end (infinite scroll overshoot) — not an error.
+  if (error && error.code !== "PGRST103") console.error("listGames", error.message);
   const total = count ?? 0;
   return { games: data ?? [], total, hasMore: from + pageSize < total };
 }
