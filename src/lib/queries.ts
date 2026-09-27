@@ -112,7 +112,9 @@ export async function listGames({ q, tag, category, sort = "popular", page = 1, 
   const term = q ? sanitizeSearch(q) : "";
   if (term) {
     // Full-text match (stemmed, weighted) OR plain substring match on the title.
-    query = query.or(`search.wfts(english).${term},title.ilike.%${term}%,tags.cs.{${term.toLowerCase().replace(/\s+/g, "-")}}`);
+    const tag = term.toLowerCase().replace(/\s+/g, "-");
+    // Values are double-quoted so dots and spaces are not parsed as filter syntax.
+    query = query.or(`search.wfts(english)."${term}",title.ilike."%${term}%",tags.cs.{"${tag}"}`);
   }
   if (tag) query = query.contains("tags", [tag]);
   if (category) query = query.eq("category_slug", category);
